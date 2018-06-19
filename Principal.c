@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <windows.h>
+#include "Agenda.h"
 
 void tela(){
-	int opt; 
+	int opt;  
+    do{
 	system("cls");   
     printf("\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\n");
     printf("\xB2                                                                              \xB2\n");
@@ -64,8 +66,7 @@ void tela(){
         }
     }while(opt!=6);
 }
-void gotoxy(int x, int y)
-{
+void gotoxy(int x, int y){
     HANDLE hOut;
     int i;
     COORD Position;
@@ -78,29 +79,27 @@ void gotoxy(int x, int y)
 }
 
 
-void msgbox(void)
-{
+void msgbox(void){
     
     gotoxy(14,7);
-    printf("\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0");
+    printf("\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\n");
     gotoxy(14,8); 
-    printf("\xB0                                                  \xB0");
+    printf("\xB0                                                  \xB0\n");
     gotoxy(14,9); 
-    printf("\xB0                                                  \xB0");
+    printf("\xB0                                                  \xB0\n");
     gotoxy(14,10); 
-    printf("\xB0                                                  \xB0");
+    printf("\xB0                                                  \xB0\n");
     gotoxy(14,11); 
-    printf("\xB0                                                  \xB0");
+    printf("\xB0                                                  \xB0\n");
     gotoxy(14,12); 
-    printf("\xB0                                                  \xB0");
+    printf("\xB0                                                  \xB0\n");
     gotoxy(14,13); 
-    printf("\xB0                                                  \xB0");
+    printf("\xB0                                                  \xB0\n");
     gotoxy(14,14);
-    printf("\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0");
+    printf("\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\xB0\n");
 }
 
-void procurar(void)
-{
+void procurar(void){
     int cont;
     char conteudo[126];
     
@@ -128,7 +127,7 @@ void procurar(void)
     printf("\xB2                                                                              \xB2\n");
     printf("\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\n");
 	gotoxy(11,8);
-	scanf("%s",x.nome);  
+	scanf("%s",agenda.nome);  
     
     FILE *arquivo;
     arquivo = fopen("Base_de_dados.txt","r");
@@ -139,67 +138,63 @@ void procurar(void)
         printf("%s",conteudo);                                     
     
     fclose(arquivo); 
-        
         cont++;
     }
-  
     fclose(arquivo);    
-        
     getch();
 }
 
-void framecadastrar(void)
-{
+void framecadastrar(void){
 	char opt;
  	 
     system("cls");
-    printf("\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
-    printf("\xB2                                                                              \xB2");
-    printf("\xB2           Super Agenda Max Ultra Turbo Power Mega 'Bicho' 1.0                \xB2");
-    printf("\xB2                                                                              \xB2");
-    printf("\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
-    printf("\xB2                                                                              \xB2");
-    printf("\xB2                                                                              \xB2");
-    printf("\xB2                                                                              \xB2");
-    printf("\xB2    Nome: _______________________________________________________________     \xB2");
-    printf("\xB2                                                                              \xB2");
-    printf("\xB2    Endereco: ___________________________________________________________     \xB2");
-    printf("\xB2                                                                              \xB2");
-    printf("\xB2    Telefone: (___)-________                                                  \xB2");
-    printf("\xB2                                                                              \xB2");
-    printf("\xB2    email: _________________                                                  \xB2");
-    printf("\xB2                                                                              \xB2");
-    printf("\xB2    Observacoes: ________________________________________________________     \xB2");
-    printf("\xB2                                                                              \xB2");
-    printf("\xB2                                                                              \xB2");
-    printf("\xB2                                                                              \xB2");
-    printf("\xB2                                                                              \xB2");
-    printf("\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
+    printf("\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\n");
+    printf("\xB2                                                                              \xB2\n");
+    printf("\xB2           Super Agenda Max Ultra Turbo Power Mega 'Bicho' 1.0                \xB2\n");
+    printf("\xB2                                                                              \xB2\n");
+    printf("\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\n");
+    printf("\xB2                                                                              \xB2\n");
+    printf("\xB2                                                                              \xB2\n");
+    printf("\xB2                                                                              \xB2\n");
+    printf("\xB2    Nome: _______________________________________________________________     \xB2\n");
+    printf("\xB2                                                                              \xB2\n");
+    printf("\xB2    Endereco: ___________________________________________________________     \xB2\n");
+    printf("\xB2                                                                              \xB2\n");
+    printf("\xB2    Telefone: (___)-________                                                  \xB2\n");
+    printf("\xB2                                                                              \xB2\n");
+    printf("\xB2    email: _________________                                                  \xB2\n");
+    printf("\xB2                                                                              \xB2\n");
+    printf("\xB2    Observacoes: ________________________________________________________     \xB2\n");
+    printf("\xB2                                                                              \xB2\n");
+    printf("\xB2                                                                              \xB2\n");
+    printf("\xB2                                                                              \xB2\n");
+    printf("\xB2                                                                              \xB2\n");
+    printf("\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\n");
     
     
 	 	
 	gotoxy(11,8);
-	gets(x.nome);
+	gets(agenda.nome);
 	fflush(stdin);
 	
 	gotoxy(15,10);
-	gets(x.endereco);
+	gets(agenda.endereco);
 	fflush(stdin);
 	
 	gotoxy(16,12);
-	gets(x.codArea);
+	gets(agenda.codArea);
 	fflush(stdin);
 	
 	gotoxy(21,12);
-	gets(x.telefone);
+	gets(agenda.telefone);
 	fflush(stdin);
 	
 	gotoxy(12,14);
-	gets(x.email);
+	gets(agenda.email);
 	fflush(stdin);
 	
 	gotoxy(18,16);
-	gets(x.obs);
+	gets(agenda.obs);
 	fflush(stdin);
 	
 	gotoxy(5,22);
@@ -208,22 +203,17 @@ void framecadastrar(void)
 	
 	int cod=0;
 	
-	if(opt=='S' || opt=='s')
-    {
+	if(opt=='S' || opt=='s'){
         FILE *arquivo;
         arquivo = fopen("ContatosBD.txt","a");
-        fprintf(arquivo,"Nome:%s Endereco:%s Telefone:(%s)-%s Email:%s Observacao:%s\n",x.nome,x.endereco,x.codArea,x.telefone,x.email,x.obs);
+        fprintf(arquivo,"Nome:%s Endereco:%s Telefone:(%s)-%s Email:%s Observacao:%s\n",agenda.nome,agenda.endereco,agenda.telefone,agenda.email);
         fclose(arquivo);
-
-        
     }
 }
 
-void apagaBD(void)
-{
+void apagaBD(void){
     char opt;
     
-    //Desenha o frame do messagebox...
     msgbox();  
     
     gotoxy(19,9);
@@ -236,8 +226,7 @@ void apagaBD(void)
     scanf("%c",&opt);
     fflush(stdin);
     
-    if (opt=='S' || opt=='s')
-    {
+    if (opt=='S' || opt=='s'){
         FILE *arquivo;
         arquivo = fopen("ContatosBD.txt","w");
         gotoxy(23,13);
@@ -247,9 +236,8 @@ void apagaBD(void)
     }
 }
 
-void listarContatos(void)
-{
-    FILE *arquivo; //Ponteiro do arquivo
+void listarContatos(void){
+    FILE *arquivo;
     char texto[200];
     int cont=1;
     
@@ -269,6 +257,8 @@ void listarContatos(void)
 }
 
 int main(void){
+	Agenda agenda;
+	system("color 1E");
 	tela();
 	getch();
 	return 0;
